@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2 class="sidebar-title">My Tasks</h2>
+            <nav class="time-periods">
+                <a href="#" class="active" data-period="today">
+                    <i class="fas fa-calendar-day"></i>
+                    <span>Today</span>
+                </a>
+                <a href="#" data-period="tomorrow">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Tomorrow</span>
+                </a>
+                <a href="#" data-period="this-week">
+                    <i class="fas fa-calendar-week"></i>
+                    <span>This Week</span>
+                </a>
+                <a href="#" data-period="next-week">
+                    <i class="fas fa-calendar-plus"></i>
+                    <span>Next Week</span>
+                </a>
+                <a href="#" data-period="this-month">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>This Month</span>
+                </a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="container">
+                <h1>Todo List</h1>
+                <div class="input-container">
+                    <input type="text" id="taskInput" placeholder="What needs to be done?">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
